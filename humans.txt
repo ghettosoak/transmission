@@ -1,0 +1,12 @@
+MELT STUDIOS
+
+Copyright 2014 Mike Fischer.
+
+This site has been designed and authored by Mike Fischer,
+at Melt Studios' Forward Operations Command in Bern, Switzerland.
+
+It has been built with Sublime Text 3, Codekit and Canary.
+
+It utilizes LESS and jQuery for its heavy lifting.
+
+If you like what you see, we'd love to hear from you. Drop us a line at e@ject.ch

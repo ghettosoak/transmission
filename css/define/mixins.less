@@ -1,0 +1,53 @@
+.iconInclude(){
+   background-image:url(../img/spritesheet.png);
+    .lt-ie9 &, .no-svg & {
+//        background-image:url(../img/spritesheet_1x.png);
+    }
+}
+
+// useful for when we only need to resize our icons between layouts
+// @width = the width of the space you need to fill
+.iconSize(@width){
+    background-size:@width*@spritesheet_width auto;
+}
+
+
+// and here is where the magic happens on the spritesheet.
+// @width = the width of the space you need to fill (yes, it's repeated)
+// @posX = the X position of the desired icon on the icon grid
+// @posY = the Y position of the desired icon on the icon grid
+.iconPlace(@width, @posX, @posY) {
+    background-position: -@posX*@width -@posY*@width;
+}
+
+.transition(@what){
+	-webkit-transition: @what;
+	-moz-transition: @what;
+	-o-transition: @what;
+	transition: @what;
+}
+
+.transform-origin(@where){
+	-webkit-transform-origin: @where;
+	-moz-transform-origin: @where;
+	-o-transform-origin: @where;
+	transform-origin: @where;
+}
+
+.transform(@what){
+	-webkit-transform: @what;
+	-moz-transform:    @what;
+	-ms-transform:     @what;
+	-o-transform:      @what;
+	transform:         @what;
+}
+
+.alpha(@howmuch){
+	background-color:rgba(255, 255, 255, @howmuch);
+}
+
+.box-shadow(@what){
+	-webkit-box-shadow: @what;
+	-moz-box-shadow: @what;
+	box-shadow: @what;
+}

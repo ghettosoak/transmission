@@ -1,0 +1,26 @@
+.direction{
+	position: absolute;
+	left:-430px;
+	width:480px;
+	height:~'calc(100% - 40px)';
+	overflow: hidden;
+	.box-shadow( inset 0px 0px 0px 10px #fff );
+	.alpha(.25);
+	.transition(left .5s @eio);
+
+	.incoming &{
+		position: absolute;
+		left:0;
+	}
+
+	&.settled{
+		position: relative;
+		float: left;
+		left:0;
+		height: 100%;
+		margin-left:20px;
+	}
+}
+
+
+

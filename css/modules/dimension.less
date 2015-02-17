@@ -1,0 +1,482 @@
+.dimension{
+	position: absolute;
+	top:0;
+	left:0;
+	min-width: 100%;
+	overflow: hidden;
+	height: 100%;
+	padding: 20px 20px 20px 50px;
+	// background-color:rgba(0,0,0,.3);
+	.transition(width .5s @eio);
+
+	&.incoming{
+		@incoming: ~'width .5s ease-in-out, padding .5s ease-in-out';
+		.transition(@incoming);
+		padding: 20px 20px 20px 480px;
+	}
+
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left:0;
+		height: 100%;
+		width: 100%;
+		// bottom: 0;
+		// right:0;
+
+		transform: translateZ(-1px) scale(2);
+		// transform: translateZ(-3px) scale(4);
+		z-index:-1;
+
+
+		background-image: url(../img/clouds_01_3.jpg);
+		// background-image: url(../img/space_03_1.jpg);
+		// background-size: cover;
+		// background-size: 4000px 2000px;
+		// background-size:3000px 2003px;
+		// background-size:3010px 1453px;
+		// background-size:auto 100%;
+		// background-position: 0% 0%;
+		background-position: center center;
+		.transition(all .5s @eio);
+		background-size: auto 100%;
+
+
+		// background-image: url(../img/stars_large.jpg);
+	}
+
+	// &:after{
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left:0;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	// bottom: 0;
+	// 	// right:0;
+
+	// 	transform: translateZ(-1px) scale(2);
+	// 	z-index:-1;
+
+
+	// 	background-image: url(../img/spectral.png);
+	// 	// background-image: url(../img/space_03_1.jpg);
+	// 	background-size: cover;
+	// 	// background-size:3000px 2003px;
+	// 	// background-size:3010px 1453px;
+	// 	// background-size:auto 100%;
+	// 	// background-position: 0% 0%;
+	// 	background-position: center center;
+	// 	.transition(all .5s @eio);
+	// }
+
+	[data-direction-count="0"] & { width: (500 * 0) + 70px; }
+	[data-direction-count="1"] & { width: (500 * 1) + 70px; }
+	[data-direction-count="2"] & { width: (500 * 2) + 70px; }
+	[data-direction-count="3"] & { width: (500 * 3) + 70px; }
+	[data-direction-count="4"] & { width: (500 * 4) + 70px; }
+	[data-direction-count="5"] & { width: (500 * 5) + 70px; }
+	[data-direction-count="6"] & { width: (500 * 6) + 70px; }
+	[data-direction-count="7"] & { width: (500 * 7) + 70px; }
+	[data-direction-count="8"] & { width: (500 * 8) + 70px; }
+	[data-direction-count="9"] & { width: (500 * 9) + 70px; }
+	[data-direction-count="10"] & { width: (500 * 10) + 70px; }
+	[data-direction-count="11"] & { width: (500 * 11) + 70px; }
+	[data-direction-count="12"] & { width: (500 * 12) + 70px; }
+	[data-direction-count="13"] & { width: (500 * 13) + 70px; }
+	[data-direction-count="14"] & { width: (500 * 14) + 70px; }
+	[data-direction-count="15"] & { width: (500 * 15) + 70px; }
+	[data-direction-count="16"] & { width: (500 * 16) + 70px; }
+	[data-direction-count="17"] & { width: (500 * 17) + 70px; }
+	[data-direction-count="18"] & { width: (500 * 18) + 70px; }
+	[data-direction-count="19"] & { width: (500 * 19) + 70px; }
+	[data-direction-count="20"] & { width: (500 * 20) + 70px; }
+	[data-direction-count="21"] & { width: (500 * 21) + 70px; }
+	[data-direction-count="22"] & { width: (500 * 22) + 70px; }
+	[data-direction-count="23"] & { width: (500 * 23) + 70px; }
+	[data-direction-count="24"] & { width: (500 * 24) + 70px; }
+	[data-direction-count="25"] & { width: (500 * 25) + 70px; }
+	[data-direction-count="26"] & { width: (500 * 26) + 70px; }
+	[data-direction-count="27"] & { width: (500 * 27) + 70px; }
+	[data-direction-count="28"] & { width: (500 * 28) + 70px; }
+	[data-direction-count="29"] & { width: (500 * 29) + 70px; }
+	[data-direction-count="30"] & { width: (500 * 30) + 70px; }
+	[data-direction-count="31"] & { width: (500 * 31) + 70px; }
+	[data-direction-count="32"] & { width: (500 * 32) + 70px; }
+	[data-direction-count="33"] & { width: (500 * 33) + 70px; }
+	[data-direction-count="34"] & { width: (500 * 34) + 70px; }
+	[data-direction-count="35"] & { width: (500 * 35) + 70px; }
+	[data-direction-count="36"] & { width: (500 * 36) + 70px; }
+	[data-direction-count="37"] & { width: (500 * 37) + 70px; }
+	[data-direction-count="38"] & { width: (500 * 38) + 70px; }
+	[data-direction-count="39"] & { width: (500 * 39) + 70px; }
+	[data-direction-count="40"] & { width: (500 * 40) + 70px; }
+	[data-direction-count="41"] & { width: (500 * 41) + 70px; }
+	[data-direction-count="42"] & { width: (500 * 42) + 70px; }
+	[data-direction-count="43"] & { width: (500 * 43) + 70px; }
+	[data-direction-count="44"] & { width: (500 * 44) + 70px; }
+	[data-direction-count="45"] & { width: (500 * 45) + 70px; }
+	[data-direction-count="46"] & { width: (500 * 46) + 70px; }
+	[data-direction-count="47"] & { width: (500 * 47) + 70px; }
+	[data-direction-count="48"] & { width: (500 * 48) + 70px; }
+	[data-direction-count="49"] & { width: (500 * 49) + 70px; }
+	[data-direction-count="50"] & { width: (500 * 50) + 70px; }
+	[data-direction-count="51"] & { width: (500 * 51) + 70px; }
+	[data-direction-count="52"] & { width: (500 * 52) + 70px; }
+	[data-direction-count="53"] & { width: (500 * 53) + 70px; }
+	[data-direction-count="54"] & { width: (500 * 54) + 70px; }
+	[data-direction-count="55"] & { width: (500 * 55) + 70px; }
+	[data-direction-count="56"] & { width: (500 * 56) + 70px; }
+	[data-direction-count="57"] & { width: (500 * 57) + 70px; }
+	[data-direction-count="58"] & { width: (500 * 58) + 70px; }
+	[data-direction-count="59"] & { width: (500 * 59) + 70px; }
+	[data-direction-count="60"] & { width: (500 * 60) + 70px; }
+	[data-direction-count="61"] & { width: (500 * 61) + 70px; }
+	[data-direction-count="62"] & { width: (500 * 62) + 70px; }
+	[data-direction-count="63"] & { width: (500 * 63) + 70px; }
+	[data-direction-count="64"] & { width: (500 * 64) + 70px; }
+	[data-direction-count="65"] & { width: (500 * 65) + 70px; }
+	[data-direction-count="66"] & { width: (500 * 66) + 70px; }
+	[data-direction-count="67"] & { width: (500 * 67) + 70px; }
+	[data-direction-count="68"] & { width: (500 * 68) + 70px; }
+	[data-direction-count="69"] & { width: (500 * 69) + 70px; }
+	[data-direction-count="70"] & { width: (500 * 70) + 70px; }
+	[data-direction-count="71"] & { width: (500 * 71) + 70px; }
+	[data-direction-count="72"] & { width: (500 * 72) + 70px; }
+	[data-direction-count="73"] & { width: (500 * 73) + 70px; }
+	[data-direction-count="74"] & { width: (500 * 74) + 70px; }
+	[data-direction-count="75"] & { width: (500 * 75) + 70px; }
+	[data-direction-count="76"] & { width: (500 * 76) + 70px; }
+	[data-direction-count="77"] & { width: (500 * 77) + 70px; }
+	[data-direction-count="78"] & { width: (500 * 78) + 70px; }
+	[data-direction-count="79"] & { width: (500 * 79) + 70px; }
+	[data-direction-count="80"] & { width: (500 * 80) + 70px; }
+	[data-direction-count="81"] & { width: (500 * 81) + 70px; }
+	[data-direction-count="82"] & { width: (500 * 82) + 70px; }
+	[data-direction-count="83"] & { width: (500 * 83) + 70px; }
+	[data-direction-count="84"] & { width: (500 * 84) + 70px; }
+	[data-direction-count="85"] & { width: (500 * 85) + 70px; }
+	[data-direction-count="86"] & { width: (500 * 86) + 70px; }
+	[data-direction-count="87"] & { width: (500 * 87) + 70px; }
+	[data-direction-count="88"] & { width: (500 * 88) + 70px; }
+	[data-direction-count="89"] & { width: (500 * 89) + 70px; }
+	[data-direction-count="90"] & { width: (500 * 90) + 70px; }
+	[data-direction-count="91"] & { width: (500 * 91) + 70px; }
+	[data-direction-count="92"] & { width: (500 * 92) + 70px; }
+	[data-direction-count="93"] & { width: (500 * 93) + 70px; }
+	[data-direction-count="94"] & { width: (500 * 94) + 70px; }
+	[data-direction-count="95"] & { width: (500 * 95) + 70px; }
+	[data-direction-count="96"] & { width: (500 * 96) + 70px; }
+	[data-direction-count="97"] & { width: (500 * 97) + 70px; }
+	[data-direction-count="98"] & { width: (500 * 98) + 70px; }
+	[data-direction-count="99"] & { width: (500 * 99) + 70px; }
+
+	[data-direction-count="100"] & { width: (500 * 100) + 70px; }
+	[data-direction-count="101"] & { width: (500 * 101) + 70px; }
+	[data-direction-count="102"] & { width: (500 * 102) + 70px; }
+	[data-direction-count="103"] & { width: (500 * 103) + 70px; }
+	[data-direction-count="104"] & { width: (500 * 104) + 70px; }
+	[data-direction-count="105"] & { width: (500 * 105) + 70px; }
+	[data-direction-count="106"] & { width: (500 * 106) + 70px; }
+	[data-direction-count="107"] & { width: (500 * 107) + 70px; }
+	[data-direction-count="108"] & { width: (500 * 108) + 70px; }
+	[data-direction-count="109"] & { width: (500 * 109) + 70px; }
+	[data-direction-count="110"] & { width: (500 * 110) + 70px; }
+	[data-direction-count="111"] & { width: (500 * 111) + 70px; }
+	[data-direction-count="112"] & { width: (500 * 112) + 70px; }
+	[data-direction-count="113"] & { width: (500 * 113) + 70px; }
+	[data-direction-count="114"] & { width: (500 * 114) + 70px; }
+	[data-direction-count="115"] & { width: (500 * 115) + 70px; }
+	[data-direction-count="116"] & { width: (500 * 116) + 70px; }
+	[data-direction-count="117"] & { width: (500 * 117) + 70px; }
+	[data-direction-count="118"] & { width: (500 * 118) + 70px; }
+	[data-direction-count="119"] & { width: (500 * 119) + 70px; }
+	[data-direction-count="120"] & { width: (500 * 120) + 70px; }
+	[data-direction-count="121"] & { width: (500 * 121) + 70px; }
+	[data-direction-count="122"] & { width: (500 * 122) + 70px; }
+	[data-direction-count="123"] & { width: (500 * 123) + 70px; }
+	[data-direction-count="124"] & { width: (500 * 124) + 70px; }
+	[data-direction-count="125"] & { width: (500 * 125) + 70px; }
+	[data-direction-count="126"] & { width: (500 * 126) + 70px; }
+	[data-direction-count="127"] & { width: (500 * 127) + 70px; }
+	[data-direction-count="128"] & { width: (500 * 128) + 70px; }
+	[data-direction-count="129"] & { width: (500 * 129) + 70px; }
+	[data-direction-count="130"] & { width: (500 * 130) + 70px; }
+	[data-direction-count="131"] & { width: (500 * 131) + 70px; }
+	[data-direction-count="132"] & { width: (500 * 132) + 70px; }
+	[data-direction-count="133"] & { width: (500 * 133) + 70px; }
+	[data-direction-count="134"] & { width: (500 * 134) + 70px; }
+	[data-direction-count="135"] & { width: (500 * 135) + 70px; }
+	[data-direction-count="136"] & { width: (500 * 136) + 70px; }
+	[data-direction-count="137"] & { width: (500 * 137) + 70px; }
+	[data-direction-count="138"] & { width: (500 * 138) + 70px; }
+	[data-direction-count="139"] & { width: (500 * 139) + 70px; }
+	[data-direction-count="140"] & { width: (500 * 140) + 70px; }
+	[data-direction-count="141"] & { width: (500 * 141) + 70px; }
+	[data-direction-count="142"] & { width: (500 * 142) + 70px; }
+	[data-direction-count="143"] & { width: (500 * 143) + 70px; }
+	[data-direction-count="144"] & { width: (500 * 144) + 70px; }
+	[data-direction-count="145"] & { width: (500 * 145) + 70px; }
+	[data-direction-count="146"] & { width: (500 * 146) + 70px; }
+	[data-direction-count="147"] & { width: (500 * 147) + 70px; }
+	[data-direction-count="148"] & { width: (500 * 148) + 70px; }
+	[data-direction-count="149"] & { width: (500 * 149) + 70px; }
+	[data-direction-count="150"] & { width: (500 * 150) + 70px; }
+	[data-direction-count="151"] & { width: (500 * 151) + 70px; }
+	[data-direction-count="152"] & { width: (500 * 152) + 70px; }
+	[data-direction-count="153"] & { width: (500 * 153) + 70px; }
+	[data-direction-count="154"] & { width: (500 * 154) + 70px; }
+	[data-direction-count="155"] & { width: (500 * 155) + 70px; }
+	[data-direction-count="156"] & { width: (500 * 156) + 70px; }
+	[data-direction-count="157"] & { width: (500 * 157) + 70px; }
+	[data-direction-count="158"] & { width: (500 * 158) + 70px; }
+	[data-direction-count="159"] & { width: (500 * 159) + 70px; }
+	[data-direction-count="160"] & { width: (500 * 160) + 70px; }
+	[data-direction-count="161"] & { width: (500 * 161) + 70px; }
+	[data-direction-count="162"] & { width: (500 * 162) + 70px; }
+	[data-direction-count="163"] & { width: (500 * 163) + 70px; }
+	[data-direction-count="164"] & { width: (500 * 164) + 70px; }
+	[data-direction-count="165"] & { width: (500 * 165) + 70px; }
+	[data-direction-count="166"] & { width: (500 * 166) + 70px; }
+	[data-direction-count="167"] & { width: (500 * 167) + 70px; }
+	[data-direction-count="168"] & { width: (500 * 168) + 70px; }
+	[data-direction-count="169"] & { width: (500 * 169) + 70px; }
+	[data-direction-count="170"] & { width: (500 * 170) + 70px; }
+	[data-direction-count="171"] & { width: (500 * 171) + 70px; }
+	[data-direction-count="172"] & { width: (500 * 172) + 70px; }
+	[data-direction-count="173"] & { width: (500 * 173) + 70px; }
+	[data-direction-count="174"] & { width: (500 * 174) + 70px; }
+	[data-direction-count="175"] & { width: (500 * 175) + 70px; }
+	[data-direction-count="176"] & { width: (500 * 176) + 70px; }
+	[data-direction-count="177"] & { width: (500 * 177) + 70px; }
+	[data-direction-count="178"] & { width: (500 * 178) + 70px; }
+	[data-direction-count="179"] & { width: (500 * 179) + 70px; }
+	[data-direction-count="180"] & { width: (500 * 180) + 70px; }
+	[data-direction-count="181"] & { width: (500 * 181) + 70px; }
+	[data-direction-count="182"] & { width: (500 * 182) + 70px; }
+	[data-direction-count="183"] & { width: (500 * 183) + 70px; }
+	[data-direction-count="184"] & { width: (500 * 184) + 70px; }
+	[data-direction-count="185"] & { width: (500 * 185) + 70px; }
+	[data-direction-count="186"] & { width: (500 * 186) + 70px; }
+	[data-direction-count="187"] & { width: (500 * 187) + 70px; }
+	[data-direction-count="188"] & { width: (500 * 188) + 70px; }
+	[data-direction-count="189"] & { width: (500 * 189) + 70px; }
+	[data-direction-count="190"] & { width: (500 * 190) + 70px; }
+	[data-direction-count="191"] & { width: (500 * 191) + 70px; }
+	[data-direction-count="192"] & { width: (500 * 192) + 70px; }
+	[data-direction-count="193"] & { width: (500 * 193) + 70px; }
+	[data-direction-count="194"] & { width: (500 * 194) + 70px; }
+	[data-direction-count="195"] & { width: (500 * 195) + 70px; }
+	[data-direction-count="196"] & { width: (500 * 196) + 70px; }
+	[data-direction-count="197"] & { width: (500 * 197) + 70px; }
+	[data-direction-count="198"] & { width: (500 * 198) + 70px; }
+	[data-direction-count="199"] & { width: (500 * 199) + 70px; }
+
+	[data-direction-count="200"] & { width: (500 * 200) + 70px; }
+	[data-direction-count="201"] & { width: (500 * 201) + 70px; }
+	[data-direction-count="202"] & { width: (500 * 202) + 70px; }
+	[data-direction-count="203"] & { width: (500 * 203) + 70px; }
+	[data-direction-count="204"] & { width: (500 * 204) + 70px; }
+	[data-direction-count="205"] & { width: (500 * 205) + 70px; }
+	[data-direction-count="206"] & { width: (500 * 206) + 70px; }
+	[data-direction-count="207"] & { width: (500 * 207) + 70px; }
+	[data-direction-count="208"] & { width: (500 * 208) + 70px; }
+	[data-direction-count="209"] & { width: (500 * 209) + 70px; }
+	[data-direction-count="210"] & { width: (500 * 210) + 70px; }
+	[data-direction-count="211"] & { width: (500 * 211) + 70px; }
+	[data-direction-count="212"] & { width: (500 * 212) + 70px; }
+	[data-direction-count="213"] & { width: (500 * 213) + 70px; }
+	[data-direction-count="214"] & { width: (500 * 214) + 70px; }
+	[data-direction-count="215"] & { width: (500 * 215) + 70px; }
+	[data-direction-count="216"] & { width: (500 * 216) + 70px; }
+	[data-direction-count="217"] & { width: (500 * 217) + 70px; }
+	[data-direction-count="218"] & { width: (500 * 218) + 70px; }
+	[data-direction-count="219"] & { width: (500 * 219) + 70px; }
+	[data-direction-count="220"] & { width: (500 * 220) + 70px; }
+	[data-direction-count="221"] & { width: (500 * 221) + 70px; }
+	[data-direction-count="222"] & { width: (500 * 222) + 70px; }
+	[data-direction-count="223"] & { width: (500 * 223) + 70px; }
+	[data-direction-count="224"] & { width: (500 * 224) + 70px; }
+	[data-direction-count="225"] & { width: (500 * 225) + 70px; }
+	[data-direction-count="226"] & { width: (500 * 226) + 70px; }
+	[data-direction-count="227"] & { width: (500 * 227) + 70px; }
+	[data-direction-count="228"] & { width: (500 * 228) + 70px; }
+	[data-direction-count="229"] & { width: (500 * 229) + 70px; }
+	[data-direction-count="230"] & { width: (500 * 230) + 70px; }
+	[data-direction-count="231"] & { width: (500 * 231) + 70px; }
+	[data-direction-count="232"] & { width: (500 * 232) + 70px; }
+	[data-direction-count="233"] & { width: (500 * 233) + 70px; }
+	[data-direction-count="234"] & { width: (500 * 234) + 70px; }
+	[data-direction-count="235"] & { width: (500 * 235) + 70px; }
+	[data-direction-count="236"] & { width: (500 * 236) + 70px; }
+	[data-direction-count="237"] & { width: (500 * 237) + 70px; }
+	[data-direction-count="238"] & { width: (500 * 238) + 70px; }
+	[data-direction-count="239"] & { width: (500 * 239) + 70px; }
+	[data-direction-count="240"] & { width: (500 * 240) + 70px; }
+	[data-direction-count="241"] & { width: (500 * 241) + 70px; }
+	[data-direction-count="242"] & { width: (500 * 242) + 70px; }
+	[data-direction-count="243"] & { width: (500 * 243) + 70px; }
+	[data-direction-count="244"] & { width: (500 * 244) + 70px; }
+	[data-direction-count="245"] & { width: (500 * 245) + 70px; }
+	[data-direction-count="246"] & { width: (500 * 246) + 70px; }
+	[data-direction-count="247"] & { width: (500 * 247) + 70px; }
+	[data-direction-count="248"] & { width: (500 * 248) + 70px; }
+	[data-direction-count="249"] & { width: (500 * 249) + 70px; }
+	[data-direction-count="250"] & { width: (500 * 250) + 70px; }
+	[data-direction-count="251"] & { width: (500 * 251) + 70px; }
+	[data-direction-count="252"] & { width: (500 * 252) + 70px; }
+	[data-direction-count="253"] & { width: (500 * 253) + 70px; }
+	[data-direction-count="254"] & { width: (500 * 254) + 70px; }
+	[data-direction-count="255"] & { width: (500 * 255) + 70px; }
+	[data-direction-count="256"] & { width: (500 * 256) + 70px; }
+	[data-direction-count="257"] & { width: (500 * 257) + 70px; }
+	[data-direction-count="258"] & { width: (500 * 258) + 70px; }
+	[data-direction-count="259"] & { width: (500 * 259) + 70px; }
+	[data-direction-count="260"] & { width: (500 * 260) + 70px; }
+	[data-direction-count="261"] & { width: (500 * 261) + 70px; }
+	[data-direction-count="262"] & { width: (500 * 262) + 70px; }
+	[data-direction-count="263"] & { width: (500 * 263) + 70px; }
+	[data-direction-count="264"] & { width: (500 * 264) + 70px; }
+	[data-direction-count="265"] & { width: (500 * 265) + 70px; }
+	[data-direction-count="266"] & { width: (500 * 266) + 70px; }
+	[data-direction-count="267"] & { width: (500 * 267) + 70px; }
+	[data-direction-count="268"] & { width: (500 * 268) + 70px; }
+	[data-direction-count="269"] & { width: (500 * 269) + 70px; }
+	[data-direction-count="270"] & { width: (500 * 270) + 70px; }
+	[data-direction-count="271"] & { width: (500 * 271) + 70px; }
+	[data-direction-count="272"] & { width: (500 * 272) + 70px; }
+	[data-direction-count="273"] & { width: (500 * 273) + 70px; }
+	[data-direction-count="274"] & { width: (500 * 274) + 70px; }
+	[data-direction-count="275"] & { width: (500 * 275) + 70px; }
+	[data-direction-count="276"] & { width: (500 * 276) + 70px; }
+	[data-direction-count="277"] & { width: (500 * 277) + 70px; }
+	[data-direction-count="278"] & { width: (500 * 278) + 70px; }
+	[data-direction-count="279"] & { width: (500 * 279) + 70px; }
+	[data-direction-count="280"] & { width: (500 * 280) + 70px; }
+	[data-direction-count="281"] & { width: (500 * 281) + 70px; }
+	[data-direction-count="282"] & { width: (500 * 282) + 70px; }
+	[data-direction-count="283"] & { width: (500 * 283) + 70px; }
+	[data-direction-count="284"] & { width: (500 * 284) + 70px; }
+	[data-direction-count="285"] & { width: (500 * 285) + 70px; }
+	[data-direction-count="286"] & { width: (500 * 286) + 70px; }
+	[data-direction-count="287"] & { width: (500 * 287) + 70px; }
+	[data-direction-count="288"] & { width: (500 * 288) + 70px; }
+	[data-direction-count="289"] & { width: (500 * 289) + 70px; }
+	[data-direction-count="290"] & { width: (500 * 290) + 70px; }
+	[data-direction-count="291"] & { width: (500 * 291) + 70px; }
+	[data-direction-count="292"] & { width: (500 * 292) + 70px; }
+	[data-direction-count="293"] & { width: (500 * 293) + 70px; }
+	[data-direction-count="294"] & { width: (500 * 294) + 70px; }
+	[data-direction-count="295"] & { width: (500 * 295) + 70px; }
+	[data-direction-count="296"] & { width: (500 * 296) + 70px; }
+	[data-direction-count="297"] & { width: (500 * 297) + 70px; }
+	[data-direction-count="298"] & { width: (500 * 298) + 70px; }
+	[data-direction-count="299"] & { width: (500 * 299) + 70px; }
+
+	[data-direction-count="300"] & { width: (500 * 300) + 70px; }
+	[data-direction-count="301"] & { width: (500 * 301) + 70px; }
+	[data-direction-count="302"] & { width: (500 * 302) + 70px; }
+	[data-direction-count="303"] & { width: (500 * 303) + 70px; }
+	[data-direction-count="304"] & { width: (500 * 304) + 70px; }
+	[data-direction-count="305"] & { width: (500 * 305) + 70px; }
+	[data-direction-count="306"] & { width: (500 * 306) + 70px; }
+	[data-direction-count="307"] & { width: (500 * 307) + 70px; }
+	[data-direction-count="308"] & { width: (500 * 308) + 70px; }
+	[data-direction-count="309"] & { width: (500 * 309) + 70px; }
+	[data-direction-count="310"] & { width: (500 * 310) + 70px; }
+	[data-direction-count="311"] & { width: (500 * 311) + 70px; }
+	[data-direction-count="312"] & { width: (500 * 312) + 70px; }
+	[data-direction-count="313"] & { width: (500 * 313) + 70px; }
+	[data-direction-count="314"] & { width: (500 * 314) + 70px; }
+	[data-direction-count="315"] & { width: (500 * 315) + 70px; }
+	[data-direction-count="316"] & { width: (500 * 316) + 70px; }
+	[data-direction-count="317"] & { width: (500 * 317) + 70px; }
+	[data-direction-count="318"] & { width: (500 * 318) + 70px; }
+	[data-direction-count="319"] & { width: (500 * 319) + 70px; }
+	[data-direction-count="320"] & { width: (500 * 320) + 70px; }
+	[data-direction-count="321"] & { width: (500 * 321) + 70px; }
+	[data-direction-count="322"] & { width: (500 * 322) + 70px; }
+	[data-direction-count="323"] & { width: (500 * 323) + 70px; }
+	[data-direction-count="324"] & { width: (500 * 324) + 70px; }
+	[data-direction-count="325"] & { width: (500 * 325) + 70px; }
+	[data-direction-count="326"] & { width: (500 * 326) + 70px; }
+	[data-direction-count="327"] & { width: (500 * 327) + 70px; }
+	[data-direction-count="328"] & { width: (500 * 328) + 70px; }
+	[data-direction-count="329"] & { width: (500 * 329) + 70px; }
+	[data-direction-count="330"] & { width: (500 * 330) + 70px; }
+	[data-direction-count="331"] & { width: (500 * 331) + 70px; }
+	[data-direction-count="332"] & { width: (500 * 332) + 70px; }
+	[data-direction-count="333"] & { width: (500 * 333) + 70px; }
+	[data-direction-count="334"] & { width: (500 * 334) + 70px; }
+	[data-direction-count="335"] & { width: (500 * 335) + 70px; }
+	[data-direction-count="336"] & { width: (500 * 336) + 70px; }
+	[data-direction-count="337"] & { width: (500 * 337) + 70px; }
+	[data-direction-count="338"] & { width: (500 * 338) + 70px; }
+	[data-direction-count="339"] & { width: (500 * 339) + 70px; }
+	[data-direction-count="340"] & { width: (500 * 340) + 70px; }
+	[data-direction-count="341"] & { width: (500 * 341) + 70px; }
+	[data-direction-count="342"] & { width: (500 * 342) + 70px; }
+	[data-direction-count="343"] & { width: (500 * 343) + 70px; }
+	[data-direction-count="344"] & { width: (500 * 344) + 70px; }
+	[data-direction-count="345"] & { width: (500 * 345) + 70px; }
+	[data-direction-count="346"] & { width: (500 * 346) + 70px; }
+	[data-direction-count="347"] & { width: (500 * 347) + 70px; }
+	[data-direction-count="348"] & { width: (500 * 348) + 70px; }
+	[data-direction-count="349"] & { width: (500 * 349) + 70px; }
+	[data-direction-count="350"] & { width: (500 * 350) + 70px; }
+	[data-direction-count="351"] & { width: (500 * 351) + 70px; }
+	[data-direction-count="352"] & { width: (500 * 352) + 70px; }
+	[data-direction-count="353"] & { width: (500 * 353) + 70px; }
+	[data-direction-count="354"] & { width: (500 * 354) + 70px; }
+	[data-direction-count="355"] & { width: (500 * 355) + 70px; }
+	[data-direction-count="356"] & { width: (500 * 356) + 70px; }
+	[data-direction-count="357"] & { width: (500 * 357) + 70px; }
+	[data-direction-count="358"] & { width: (500 * 358) + 70px; }
+	[data-direction-count="359"] & { width: (500 * 359) + 70px; }
+	[data-direction-count="360"] & { width: (500 * 360) + 70px; }
+	[data-direction-count="361"] & { width: (500 * 361) + 70px; }
+	[data-direction-count="362"] & { width: (500 * 362) + 70px; }
+	[data-direction-count="363"] & { width: (500 * 363) + 70px; }
+	[data-direction-count="364"] & { width: (500 * 364) + 70px; }
+	[data-direction-count="365"] & { width: (500 * 365) + 70px; }
+	[data-direction-count="366"] & { width: (500 * 366) + 70px; }
+	[data-direction-count="367"] & { width: (500 * 367) + 70px; }
+	[data-direction-count="368"] & { width: (500 * 368) + 70px; }
+	[data-direction-count="369"] & { width: (500 * 369) + 70px; }
+	[data-direction-count="370"] & { width: (500 * 370) + 70px; }
+	[data-direction-count="371"] & { width: (500 * 371) + 70px; }
+	[data-direction-count="372"] & { width: (500 * 372) + 70px; }
+	[data-direction-count="373"] & { width: (500 * 373) + 70px; }
+	[data-direction-count="374"] & { width: (500 * 374) + 70px; }
+	[data-direction-count="375"] & { width: (500 * 375) + 70px; }
+	[data-direction-count="376"] & { width: (500 * 376) + 70px; }
+	[data-direction-count="377"] & { width: (500 * 377) + 70px; }
+	[data-direction-count="378"] & { width: (500 * 378) + 70px; }
+	[data-direction-count="379"] & { width: (500 * 379) + 70px; }
+	[data-direction-count="380"] & { width: (500 * 380) + 70px; }
+	[data-direction-count="381"] & { width: (500 * 381) + 70px; }
+	[data-direction-count="382"] & { width: (500 * 382) + 70px; }
+	[data-direction-count="383"] & { width: (500 * 383) + 70px; }
+	[data-direction-count="384"] & { width: (500 * 384) + 70px; }
+	[data-direction-count="385"] & { width: (500 * 385) + 70px; }
+	[data-direction-count="386"] & { width: (500 * 386) + 70px; }
+	[data-direction-count="387"] & { width: (500 * 387) + 70px; }
+	[data-direction-count="388"] & { width: (500 * 388) + 70px; }
+	[data-direction-count="389"] & { width: (500 * 389) + 70px; }
+	[data-direction-count="390"] & { width: (500 * 390) + 70px; }
+	[data-direction-count="391"] & { width: (500 * 391) + 70px; }
+	[data-direction-count="392"] & { width: (500 * 392) + 70px; }
+	[data-direction-count="393"] & { width: (500 * 393) + 70px; }
+	[data-direction-count="394"] & { width: (500 * 394) + 70px; }
+	[data-direction-count="395"] & { width: (500 * 395) + 70px; }
+	[data-direction-count="396"] & { width: (500 * 396) + 70px; }
+	[data-direction-count="397"] & { width: (500 * 397) + 70px; }
+	[data-direction-count="398"] & { width: (500 * 398) + 70px; }
+	[data-direction-count="399"] & { width: (500 * 399) + 70px; }
+
+	[data-direction-count="400"] & { width: (500 * 400) + 70px; }
+
+	// BITCH PLEASE
+
+}

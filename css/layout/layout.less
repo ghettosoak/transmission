@@ -1,0 +1,93 @@
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+	margin:0;
+	overflow: hidden;
+}
+
+#master{
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0px;
+	left:0px;
+	font-size: 18px;
+	line-height: 22px;
+	font-family: robotothin, Helvetica, sans-serif;
+	color: white;
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+	perspective: 1px;
+	transform-style: preserve-3d;
+
+	// background-image: url(../img/clouds_01.jpg);
+	// // background-image: url(../img/space_03_2.jpg);
+	// background-size: cover;
+	// background-position: 0px 50%;
+}
+
+// .bg{
+// 	position: absolute; 
+// 	top: 0;
+// 	left: 0;
+// 	height: 100%;
+// 	width: 100%;
+// 	overflow: hidden;
+
+// 	div{
+// 		background-image: url(../img/earth_03.jpg);
+// 		background-size: cover;
+// 		background-position: center center;
+// 	}
+
+// 	&:before{
+// 		content: "";
+// 		position: absolute;
+// 		top: 0;
+// 		left:0;
+// 		height: 100%;
+// 		width: 100%;
+// 		// bottom: 0;
+// 		// right:0;
+
+// 		transform: translateZ(-1px) scale(2);
+// 		z-index:-1;
+
+
+// 		background-image: url(../img/earth_03.jpg);
+// 		// background-image: url(../img/space_03_2.jpg);
+// 		background-size: cover;
+// 		// background-position: 0% 0%;
+// 		background-position: center center;
+// 		.transition(all .5s @eio);
+// 	}
+// }
+
+.put{
+	margin:auto;
+	width:@masterwidth;
+	height:100%;
+	position:relative;
+}
+
+header, 
+#content, 
+footer{
+	position:relative;
+	width:100%;
+	float:left;
+}

@@ -1,0 +1,50 @@
+.steps{
+	position: relative;
+	overflow: scroll;
+	height:~'calc(100% - 150px)';
+	top:150px;
+	z-index: 1;
+	.alpha(0);
+	.transition(all .25s @eio);	
+
+	.typing &{
+		top: 100%;
+	}
+
+	.step{
+		position: relative;
+		float: left;
+		width: 100%;
+		color: white;
+		text-decoration: none;
+		padding: 0 30px 20px;
+
+		&:focus{
+			outline:none; 
+			.alpha(0.25);
+		}
+
+		&:before{
+			content:'';
+			height:1px;
+			width:~'calc(100% - 60px)';
+			bottom:0;
+			left: 30px;
+			position: absolute;
+			border-bottom: 1px white dotted;
+		}
+
+		h2{
+			margin:0;
+			line-height: 1.2em;
+			padding:20px 0 0;
+			font-weight: normal;
+			font-family: robotoregular;
+		}
+
+		p{
+			margin:0;
+			b{ font-family: robotoregular; }
+		}
+	}
+}
