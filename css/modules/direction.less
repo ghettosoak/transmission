@@ -5,7 +5,8 @@
 	height:~'calc(100% - 40px)';
 	overflow: hidden;
 	.box-shadow( inset 0px 0px 0px 10px #fff );
-	.alpha(.25);
+	// background-color: rgba(0, 55, 84, 0.25);
+	background-color: rgba(0, 55, 84, 0.6);
 	.transition(left .5s @eio);
 
 	.incoming &{
@@ -19,6 +20,33 @@
 		left:0;
 		height: 100%;
 		margin-left:20px;
+	}
+
+	&:before{
+		content:'';
+		position: absolute;
+		width: 420px;
+		height: 1px;
+		background-color: white;
+		left: 30px;
+		top: 150px;
+	}
+}
+
+.leads,
+.steps{
+	position: absolute;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height:~'calc(100% - 150px)';
+	width: 100%;
+	top:150px;
+	z-index: 1;
+	.alpha(0);
+	.transition(all .25s @eio);	
+
+	.typing &{
+		top: 100%;
 	}
 }
 

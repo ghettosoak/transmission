@@ -16,14 +16,14 @@
 		position: absolute;
 		top:50%;
 		left:50%;
-		background-color:#8a7174;
+		background-color: #8a7174;
 		.transition(all .25s @eio);
 	}
 
 	&:before{
 		height:20px;
 		width:1px;
-		margin:-10px 0 0 -.5px;
+		margin:-10px 0 0 -1px;
 	}
 
 	&:after{
@@ -39,5 +39,16 @@
 		&:after{
 			background-color:rgb(77, 135, 195);
 		}
+	}
+
+	span{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 1px;
+		height: 100%;
+		display: block;
+		background: linear-gradient(to bottom, rgb(77, 113, 155) 0%, rgb(88, 130, 175) 25%, rgb(134, 179, 218) 50%, rgb(167, 219, 245) 75%, rgb(231, 249, 253) 100%);
+
 	}
 }

@@ -1,0 +1,73 @@
+.first{
+	padding: 30px;
+	text-align: center;
+
+	&:before{ content: none; }
+
+	h1{ 
+		margin: 45px 0; 
+		font-weight: normal;
+		font-family: robotothin;
+		font-size: 50px;
+	}
+	
+	a{
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px dotted white;
+		padding-bottom: 3px;
+		position: relative;
+		display: inline-block;
+	}
+
+	b{
+		font-weight: normal;
+		font-family: robotoregular;
+	}
+
+	span{
+		padding: 5px 15px 7px; 
+		border-radius: 5px;
+		margin-bottom: 15px;
+		display: inline-block;
+		border: 2px white solid;
+		font-family: robotoregular;
+	}
+
+	button{
+		display: block;
+		-webkit-appearance: none;
+		-moz-appearance:    none;
+		appearance:         none;
+		background-color: white;
+		border: 1px solid white;
+		color: #6d97bf;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+		padding: 20px 0;
+		border-radius: 5px;
+		font-size: 20px;
+		font-family: robotoregular;
+
+		&:focus, &:active{
+			outline: 0;
+		}
+
+		&.okaygotit{
+			background-color: transparent;
+			color: white;
+		}
+	}
+
+	.mac{
+		display: none;
+		.cmd &{ display: inline-block; }
+	}
+
+	.win{
+		.cmd &{ display: none; }
+	}
+
+}

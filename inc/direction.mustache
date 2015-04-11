@@ -1,4 +1,15 @@
-<div class="direction">
-	<input type="text" class="find">
-	<div class="steps"></div>
+<div 
+	class="direction direction_{{number}}" 
+	data-number="{{number}}"
+	data-want="0">
+	<input 
+		type="text" 
+		class="find" 
+		data-number="{{number}}" 
+		value="{{value}}" 
+		onfocus="this.value = this.value;">
+	<div class="refind"></div>
+	<div class="leads leads_{{number}}"></div>
+	<div class="spinner"></div>
+	<div class="steps steps_{{number}}"></div>
 </div>

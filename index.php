@@ -6,22 +6,23 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>trns_mssn</title>
+    <title>AB.JECT</title>
 
-    <link rel="shortcut icon" href="assets/img/favicon.ico" />
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/master.css" />
 </head>
 
 <body data-direction-count="0">
+	<div class="add_direction">
+		<span></span>
+	</div>
+	<div class="credit"><span>?</span></div>
 	<div id="master">
-		<!-- <div class="bg">
-			<div></div>
-		</div> -->
 		<div class="dimension">
-			<div class="add_direction"></div>
+			
 		</div>
 	</div>
 

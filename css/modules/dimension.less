@@ -6,7 +6,6 @@
 	overflow: hidden;
 	height: 100%;
 	padding: 20px 20px 20px 50px;
-	// background-color:rgba(0,0,0,.3);
 	.transition(width .5s @eio);
 
 	&.incoming{
@@ -15,61 +14,33 @@
 		padding: 20px 20px 20px 480px;
 	}
 
-	&:before{
+	&:before,
+	&:after{
 		content: "";
 		position: absolute;
-		top: 0;
-		left:0;
+		left: 0;
 		height: 100%;
 		width: 100%;
-		// bottom: 0;
-		// right:0;
-
-		transform: translateZ(-1px) scale(2);
-		// transform: translateZ(-3px) scale(4);
-		z-index:-1;
-
-
-		background-image: url(../img/clouds_01_3.jpg);
-		// background-image: url(../img/space_03_1.jpg);
-		// background-size: cover;
-		// background-size: 4000px 2000px;
-		// background-size:3000px 2003px;
-		// background-size:3010px 1453px;
-		// background-size:auto 100%;
-		// background-position: 0% 0%;
 		background-position: center center;
-		.transition(all .5s @eio);
 		background-size: auto 100%;
-
-
-		// background-image: url(../img/stars_large.jpg);
+		.transition(all .5s @eio);
 	}
 
-	// &:after{
-	// 	content: "";
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left:0;
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	// bottom: 0;
-	// 	// right:0;
+	&:before{
+		bottom: -20%;
+		transform: translateZ(-1px) scale(2);
+		z-index:-2;
+		// background-image: url(../img/seed/01.png);
+		background-image: url(../img/seed/01_i.png);
+	}
 
-	// 	transform: translateZ(-1px) scale(2);
-	// 	z-index:-1;
-
-
-	// 	background-image: url(../img/spectral.png);
-	// 	// background-image: url(../img/space_03_1.jpg);
-	// 	background-size: cover;
-	// 	// background-size:3000px 2003px;
-	// 	// background-size:3010px 1453px;
-	// 	// background-size:auto 100%;
-	// 	// background-position: 0% 0%;
-	// 	background-position: center center;
-	// 	.transition(all .5s @eio);
-	// }
+	&:after{
+		bottom: -50%;
+		transform: translateZ(-2px) scale(3);
+		z-index:-3;
+		// background-image: url(../img/seed/02.png);
+		background-image: url(../img/seed/02_i.png);
+	}
 
 	[data-direction-count="0"] & { width: (500 * 0) + 70px; }
 	[data-direction-count="1"] & { width: (500 * 1) + 70px; }
