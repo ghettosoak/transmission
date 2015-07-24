@@ -107,13 +107,11 @@ footer {
   bottom: -20%;
   transform: translateZ(-1px) scale(2);
   z-index: -2;
-  background-image: url(../img/seed/01_i.png);
 }
 .dimension:after {
   bottom: -50%;
   transform: translateZ(-2px) scale(3);
   z-index: -3;
-  background-image: url(../img/seed/02_i.png);
 }
 [data-direction-count="0"] .dimension {
   width: 70px;
@@ -1805,7 +1803,7 @@ footer {
   display: inline-block;
 }
 .step h2 {
-  margin: 0;
+  margin: 0 0 10px;
   line-height: 1.2em;
   padding: 0;
   font-weight: normal;
@@ -1833,7 +1831,7 @@ footer {
   transform: rotate(45deg);
 }
 .step p {
-  margin: 0;
+  margin: 0 0 10px;
 }
 .step p b {
   font-family: robotoregular;

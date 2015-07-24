@@ -6941,9 +6941,21 @@ $(document).on('keyup keydown', function(e){
 	var $active = $(document.activeElement)
 	// console.log($active)
 
+	if (  // COMMAND / CTRL + ENTER + SHIFT
+			(map[13] && map[17] && map[16]) ||
+			(map[13] && map[91] && map[16]) ||
+			(map[13] && map[93] && map[16])
+		){
+
+		f.preventDefault();
+		addDirection( $('.direction').first().children('.find').val() );
+		map = []; 
+	}
+
 	if (  // COMMAND / CTRL + ENTER
 			(map[13] && map[17]) ||
-			(map[13] && map[91])
+			(map[13] && map[91]) ||
+			(map[13] && map[93])
 		){
 
 		f.preventDefault();
